@@ -13,7 +13,8 @@ matrix:
     compiler: ": #stack nightly linux"
     os: linux
 
-    # Using compiler above sets CC to an invalid value, so unset it
+before_install:
+  # Using compiler above sets CC to an invalid value, so unset it
 - unset CC
 
 # Download and unpack the stack executable
