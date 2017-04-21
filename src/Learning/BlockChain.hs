@@ -45,4 +45,4 @@ like this by only considering a longest path to be valid if it's ahead of the
 other paths by a certain number of blocks.
 
 -}
-module BlockChain () where
+module Learning.BlockChain () where
