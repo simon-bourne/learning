@@ -1,26 +1,27 @@
-{-
+{- |
 Description : Spacemacs
 
 = Keybindings
 
+@
 ,                     Major mode keybindings (shortcut for SPC m)
 %                     Go to matching parenthesis
 p                     Insert yanked text after (next line for yanked lines)
 P                     Insert yanked text before (previous line for yanked lines)
-q <any key>           Start recording macro for key
+q \<any key\>           Start recording macro for key
 q                     Finish recording macro
-@ <any key>           Run macro for key
-m <any key>           Mark cursor position as key (e.g. m1 stores a mark at the 1 key)
-` <any key>           Goto mark (e.g. `1 goes to mark 1)
-' <any key>           Goto mark line, first non whitespace
+\@ \<any key\>           Run macro for key
+m \<any key\>           Mark cursor position as key (e.g. m1 stores a mark at the 1 key)
+` \<any key\>           Goto mark (e.g. `1 goes to mark 1)
+' \<any key\>           Goto mark line, first non whitespace
 ~                     Toggle case
 .                     Repeat edit
 r                     Replace char
 R                     Replace till end of line then insert
-y <navigation key>    Yank
-d <navigation key>    Delete
+y \<navigation key\>    Yank
+d \<navigation key\>    Delete
 D                     Delete rest of line
-c <navigation key>    Change
+c \<navigation key\>    Change
 C                     Change rest of line
 v                     Visual (select) mode
 V                     Visual (select) whole line mode
@@ -34,9 +35,9 @@ s                     Delete character under cursor and enter inesrt mode
 S                     Delete current line and enter insert mode
 [                     Various commands (shown in help) like move line up
 ]                     As [ but downwards
-f <charater>          Find charater on current line
+f \<charater\>          Find charater on current line
 F                     Backwards f
-t <charater>          As f but move before charater
+t \<charater\>          As f but move before charater
 T                     Backwards t
 ;                     Repeat last f, F, t or T
 x                     Delete charater under cursor
@@ -60,9 +61,11 @@ K                     Hoogle query (in haskell mode)
 &                     Repeat last :s without modifiers
 (                     Next sentence
 )                     Previous sentence
+@
 
 = Navigation keys
 
+@
 g                     Various navigation commands (jump to symbol, backward word etc).
 w                     Start of next camel cased word
 W                     Start of next word
@@ -75,17 +78,20 @@ B                     Start of previous word
 $                     End of line
 +                     First non whitespace of next line
 -                     First non whitespace of previous line
-<repeat command key>  Whole line
+\<repeat command key\>  Whole line
+@
 
 = Modes
 
 == Common keybindings for Visual and Expand Region mode
 
-  s <open bracket>          Surround with bracket and spaces
-  s <close bracket>         Surround with bracket without spaces
-  i <various>
-  u                         Convert to lower case
-  U                         Convert to upper case
+@
+s \<open bracket\>          Surround with bracket and spaces
+s \<close bracket\>         Surround with bracket without spaces
+i \<various\>
+u                         Convert to lower case
+U                         Convert to upper case
+@
 
 == iedit mode
 
@@ -93,6 +99,7 @@ iedit mode (SPC s e, or e from expand region mode) allows multiple occurences of
 
 === Additional keybindings
 
+@
 ESC	go back to normal state
 TAB	toggle current occurrence
 0	go to the beginning of the current occurrence
@@ -114,6 +121,21 @@ S	(substitute) delete the occurrences and switch to iedit-insert state
 V	toggle visibility of lines with no occurrence
 U	Up-case the occurrences
 C-U     Down-case the occurences
+@
+
+== Neotree
+
+@
+C-c     Neotree command prefix
+@
+
+== Magit
+
+@
+cc       Commit (cursor on staged or diff)
+dd       Diff (cursor on staged)
+@
+
 -}
 
 module Learning.Spacemacs () where
